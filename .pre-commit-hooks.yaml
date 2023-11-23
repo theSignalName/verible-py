@@ -3,10 +3,10 @@
   description: Test verilog files with verible-verilog-format
   entry: verible-verilog-format
   language: python
-  types: [verilog, system-verilog]
+  types_or: [verilog, system-verilog]
 - id: verible-verilog-lint
   name: verible-verilog-lint
   description: Test verilog files with verible-verilog-lint
   entry: verible-verilog-lint
   language: python
-  types: [verilog, system-verilog]
+  types_or: [verilog, system-verilog]
