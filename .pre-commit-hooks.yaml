@@ -1,7 +1,12 @@
-- id: shellcheck
-  name: shellcheck
-  description: Test shell scripts with shellcheck
-  entry: shellcheck
+- id: verible-verilog-format
+  name: verible-verilog-format
+  description: Test verilog files with verible-verilog-format
+  entry: verible-verilog-format
   language: python
-  types: [shell]
-  require_serial: true # shellcheck can detect sourcing this way
+  types: [verilog, system-verilog]
+- id: verible-verilog-lint
+  name: verible-verilog-lint
+  description: Test verilog files with verible-verilog-lint
+  entry: verible-verilog-lint
+  language: python
+  types: [verilog, system-verilog]

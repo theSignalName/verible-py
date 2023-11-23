@@ -1,23 +1,20 @@
-[![build status](https://github.com/shellcheck-py/shellcheck-py/actions/workflows/main.yml/badge.svg)](https://github.com/shellcheck-py/shellcheck-py/actions/workflows/main.yml)
-[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/shellcheck-py/shellcheck-py/main.svg)](https://results.pre-commit.ci/latest/github/shellcheck-py/shellcheck-py/main)
+# verible-py
 
-# shellcheck-py
-
-A python wrapper to provide a pip-installable [shellcheck] binary.
+A python wrapper to provide a pip-installable [verible] binary.
 
 Internally this package provides a convenient way to download the pre-built
-shellcheck binary for your particular platform.
+verible binary for your particular platform.
 
 ### installation
 
 ```bash
-pip install shellcheck-py
+pip install verible-py
 ```
 
 ### usage
 
-After installation, the `shellcheck` binary should be available in your
-environment (or `shellcheck.exe` on windows).
+After installation, the `verible` binary should be available in your
+environment (or `verible.exe` on windows).
 
 ### As a pre-commit hook
 
@@ -26,11 +23,11 @@ See [pre-commit] for instructions
 Sample `.pre-commit-config.yaml`:
 
 ```yaml
--   repo: https://github.com/shellcheck-py/shellcheck-py
+-   repo: https://github.com/verible-py/verible-py
     rev: v0.9.0.6
     hooks:
-    -   id: shellcheck
+    -   id: verible
 ```
 
-[shellcheck]: https://shellcheck.net
+[verible]: https://chipsalliance.github.io/verible/
 [pre-commit]: https://pre-commit.com
