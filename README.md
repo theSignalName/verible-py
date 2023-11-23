@@ -23,10 +23,11 @@ See [pre-commit] for instructions
 Sample `.pre-commit-config.yaml`:
 
 ```yaml
--   repo: https://github.com/verible-py/verible-py
-    rev: v0.9.0.6
+- repo: https://github.com/imc-trading/verible-py.git
+    rev: v0.0-3426
     hooks:
-    -   id: verible
+      - id: verible-verilog-lint
+      - id: verible-verilog-format
 ```
 
 [verible]: https://chipsalliance.github.io/verible/
